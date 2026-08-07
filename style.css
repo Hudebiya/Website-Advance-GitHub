@@ -182,3 +182,650 @@ header{
     max-width:500px;
     display:block;
 }
+
+/*====================================================
+                NEHA FEATURES SECTION
+=====================================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.neha-features{
+    width: 100%;
+    background: #FFF8F4;
+    padding: 100px 7%;
+    overflow: hidden;
+    position: relative;
+}
+
+.neha-container{
+    max-width: 1250px;
+    margin: auto;
+    position: relative;
+}
+
+.neha-heading{
+
+    font-family: "Cherry Bomb One", cursive;
+    font-size: 52px;
+    color: #F67EA8;
+    text-align: center;
+    line-height: 1.3;
+    font-weight: 400;
+    margin-bottom: 80px;
+
+}
+
+/*============================
+      Clouds & Rainbow
+=============================*/
+
+.cloud{
+    position: absolute;
+    width: 140px;
+    opacity: .9;
+}
+
+.cloud-left{
+    left: -30px;
+    top: 20px;
+}
+
+.cloud-right{
+    right: -20px;
+    top: 70px;
+}
+
+.rainbow{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 170px;
+}
+
+/*============================
+      Feature Cards
+=============================*/
+
+.neha-feature-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px;   /* Pehle 25px ya 30px tha, ise 45px kar do */
+    width: 100%;
+}
+
+.neha-feature-card{
+    padding: 15px;
+}
+
+.neha-feature-card:hover{
+    transform: translateY(-8px);
+}
+
+.feature-number{
+    margin-bottom: 20px;
+}
+
+.neha-feature-card h3{
+    margin-bottom: 15px;
+}
+
+.neha-feature-card p{
+    margin-top: 10px;
+    line-height: 28px;
+}
+/*============================
+      Chair Card
+=============================*/
+
+.chair-card{
+    position: absolute;
+    right: 0;
+    top: 110px;
+    width: 350px;
+    background: white;
+    border-radius: 30px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 20px 45px rgba(0,0,0,.08);
+}
+
+.chair-card img{
+    width: 100%;
+}
+
+.chair-info{
+    margin-top: 18px;
+}
+
+.chair-info h4{
+    color: #444;
+    font-size: 22px;
+}
+
+.chair-info span{
+    display: block;
+    margin: 10px 0;
+    color: #F67EA8;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.chair-info a{
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    background: #F67EA8;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.chair-info a:hover{
+    background: #ea5f92;
+}
+
+/*============================
+        Responsive
+=============================*/
+
+@media(max-width:1100px){
+
+    .chair-card{
+        position: static;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .neha-feature-wrapper{
+        width: 100%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .neha-heading{
+        font-size: 30px;
+    }
+
+    .neha-feature-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .cloud,
+    .rainbow{
+        display:none;
+    }
+
+}
+
+/*====================================
+      NEW ARRIVALS SECTION
+====================================*/
+
+.neha-new-arrivals{
+
+    background:#FFF8F4;
+    padding:100px 7%;
+
+}
+
+.neha-arrivals-top{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:60px;
+
+}
+
+.neha-arrivals-title{
+
+    font-family: "Cherry Bomb One", cursive;
+    font-size: 42px;
+    color: #F67EA8;
+    font-weight: 400;
+
+}
+
+.neha-explore-btn{
+
+    background:#F67EA8;
+    color:white;
+    text-decoration:none;
+    padding:12px 32px;
+    border-radius:40px;
+    transition:.3s;
+
+}
+
+.neha-explore-btn:hover{
+
+    background:#ef5d92;
+
+}
+
+.neha-products-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+
+}
+
+.neha-product-card{
+
+    background:white;
+    border:2px solid #ffd6df;
+    border-radius:25px;
+    padding:25px;
+    text-align:center;
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.neha-product-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.neha-product-card img{
+
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    margin-bottom:20px;
+
+}
+
+.neha-product-card h3{
+
+    font-size:22px;
+    color:#444;
+    margin-bottom:10px;
+
+}
+
+.neha-product-card p{
+
+    color:#F67EA8;
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:18px;
+
+}
+
+.neha-product-card button{
+
+    background:#F67EA8;
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:40px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.neha-product-card button:hover{
+
+    background:#ef5d92;
+
+}
+
+/*=====================
+Responsive
+======================*/
+
+@media(max-width:992px){
+
+.neha-products-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.neha-arrivals-top{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+.neha-products-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/*==========================
+CONTACT SECTION
+===========================*/
+
+.contact-section{
+
+    width:100%;
+    padding:100px 8%;
+    background:#FFF8F4;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:70px;
+
+}
+
+.contact-image{
+
+    flex:1;
+
+}
+
+.contact-image img{
+
+    width:100%;
+    border-radius:35px;
+    display:block;
+
+}
+
+.contact-content{
+
+    flex:1;
+    position:relative;
+
+}
+
+.moon-stars{
+
+    width:80px;
+    position:absolute;
+    top:-40px;
+    right:20px;
+
+}
+
+.contact-content h2{
+
+    font-family:"Cherry Bomb One",cursive;
+    color:#ff8ca7;
+    font-size:52px;
+    line-height:1.2;
+    margin-bottom:35px;
+
+}
+
+.contact-info p{
+
+    color:#666;
+    margin:16px 0;
+    font-size:16px;
+
+}
+
+.contact-btn{
+
+    display:inline-block;
+    margin-top:25px;
+    background:#ff8ca7;
+    color:white;
+    text-decoration:none;
+    padding:15px 38px;
+    border-radius:40px;
+    transition:.3s;
+
+}
+
+.contact-btn:hover{
+
+    background:#ff6e95;
+
+}
+
+/*=========== Responsive ===========*/
+
+@media(max-width:992px){
+
+.contact-section{
+
+flex-direction:column;
+
+}
+
+.contact-content{
+
+text-align:center;
+
+}
+
+.moon-stars{
+
+position:static;
+margin-bottom:20px;
+
+}
+
+}
+
+.gallery{
+
+    background:#fff;
+    padding:35px 7%;
+
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:18px;
+
+}
+
+.gallery img{
+
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:12px;
+
+}
+
+/*=========================
+        FOOTER
+==========================*/
+
+.footer{
+
+    background:#FF8E8E;
+    padding:70px 8% 25px;
+
+}
+
+.footer-container{
+
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    align-items:center;
+    gap:60px;
+
+}
+
+/* Left */
+
+.footer-left h4{
+
+    color:white;
+    margin-bottom:20px;
+    font-size:20px;
+
+}
+
+.footer-links{
+
+    display:flex;
+    gap:18px;
+    margin-bottom:25px;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+    color:white;
+    font-size:15px;
+
+}
+
+.footer-social{
+
+    display:flex;
+    gap:18px;
+    color:white;
+    font-size:18px;
+
+}
+
+/* Center */
+
+.footer-center{
+
+    text-align:center;
+    border-left:1px solid rgba(255,255,255,.3);
+    border-right:1px solid rgba(255,255,255,.3);
+    padding:0 40px;
+
+}
+
+.footer-center img{
+
+    width:55px;
+    margin-bottom:10px;
+
+}
+
+.footer-center h2{
+
+    font-family:"Cherry Bomb One",cursive;
+    color:white;
+    font-size:38px;
+    line-height:1.2;
+    font-weight:400;
+
+}
+
+/* Right */
+
+.footer-right h3{
+
+    color:white;
+    font-family:"Cherry Bomb One",cursive;
+    font-size:26px;
+    line-height:1.3;
+    font-weight:400;
+    margin-bottom:25px;
+
+}
+
+.subscribe-box{
+
+    display:flex;
+
+}
+
+.subscribe-box input{
+
+    flex:1;
+    border:none;
+    outline:none;
+    padding:14px;
+    border-radius:30px 0 0 30px;
+
+}
+
+.subscribe-box button{
+
+    border:none;
+    background:white;
+    color:#FF8E8E;
+    padding:14px 20px;
+    border-radius:0 30px 30px 0;
+    cursor:pointer;
+    font-weight:bold;
+
+}
+
+/* Copyright */
+
+.footer hr{
+
+    border:1px solid rgba(255,255,255,.3);
+    margin:45px 0 20px;
+
+}
+
+.copyright{
+
+    text-align:center;
+    color:white;
+    font-size:14px;
+
+}
+
+
+/*=====================
+Responsive
+======================*/
+
+@media(max-width:992px){
+
+.footer-container{
+
+grid-template-columns:1fr;
+text-align:center;
+
+}
+
+.footer-center{
+
+border:none;
+padding:30px 0;
+
+}
+
+.footer-links{
+
+justify-content:center;
+
+}
+
+.footer-social{
+
+justify-content:center;
+
+}
+
+.subscribe-box{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+.subscribe-box input,
+.subscribe-box button{
+
+border-radius:30px;
+
+}
+
+}
