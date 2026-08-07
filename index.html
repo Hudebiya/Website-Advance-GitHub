@@ -11,105 +11,52 @@
     <title>Baby Shop</title>
 </head>
 <body>
-   <<header>
-        <nav class="navbar navbar-expand-lg py-2">
-            <div class="container-fluid px-4 px-lg-5">
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse w-100" id="mainNavbar">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    </ul>
-
-                    <a class="navbar-brand mx-auto d-none d-lg-block" href="#">
-                        <img src="assets/logo.png" alt="Baby Shop Logo" class="logo-img">
-                    </a>
-
-                    <div class="d-flex align-items-center gap-3 ms-auto">
-                        <a href="#" class="auth-link me-2">Log In</a>
-                        <a href="#" class="auth-link me-3">Register</a>
-                        <a href="#" class="btn-cart">
-                            <i class="fa-solid fa-cart-shopping me-2"></i>Cart
-                        </a>
-                    </div>
-                </div>
-                <a class="navbar-brand d-lg-none" href="#">
-                    <img src="assets/logo.png" alt="Baby Shop Logo" class="logo-img" style="max-width: 140px;">
-                </a>
-            </div>
-        </nav>
-    </header>
-
-    <section class="hero-section container-fluid p-0">
-    <div class="hero-wrapper">
-        
-        <img src="assets/hero-1.avif" alt="Baby Shop Banner" class="hero-bg-img">
-
-        <div class="hero-content-overlay">
-            <h1 class="hero-heading">
-                YOUR DREAM <br>
-                <span class="highlight">BABY SHOP</span>
-            </h1>
-            <a href="#" class="btn-shop-now">SHOP NOW</a>
+   <header>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
         </div>
+
+        <div class="logo">
+            <img src="assets/logo.png" alt="logo">
+        </div>
+
+        <div class="nav-right">
+            <a href="#">Log In</a>
+            <a href="#">Register</a>
+
+            <button class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </button>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-left"></div>
+    <div class="hero-right"></div>
+</section>
+
+<section class="promo-section">
+    <div class="promo-left">
+        <img src="assets/Frame 209.png" class="frame-img" alt="">
+        <img src="assets/cuthigh-chair-baby-infants.png" class="chair-img" alt="">
+    </div>
+    <div class="promo-right">
+        <img src="assets/baby-2.avif" class="baby2-img" alt="">
+        <img src="assets/baby-1.png" class="baby1-img" alt="">
     </div>
 </section>
 
-<section class="journey-section py-5">
-    <div class="container">
-        <div class="journey-card">
-            <div class="row align-items-center">
-                
-                <div class="col-lg-6 col-md-12 text-center">
-                    <div class="journey-img-box">
-                        <img src="assets/Frame 209.png" alt="Begin Your Baby's Journey" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 text-center">
-                    <div class="journey-img-box">
-                        <img src="assets/baby-2.avif" alt="Begin Your Baby's Journey" class="img-fluid">
-                    </div>
-                </div>
-
-            </div>
-        </div>
+<section class="banner-section">
+    <div class="banner">
+        <img src="assets/YOUR DREAM BABY SHOP.png" class="banner-center" alt="">
     </div>
 </section>
-
-<section class="dual-promo-section">
-    <div class="container">
-        <div class="row g-4">
-            
-            <div class="col-md-6">
-                <div class="promo-banner-card">
-                    <img src="assets/chair.avif" alt="Promo Left" class="img-fluid promo-img">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="promo-banner-card">
-                    <img src="assets/baby-1.png" alt="Promo Right" class="img-fluid promo-img">
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="edge-banner-section">
-    <div class="container-fluid px-0">
-        <div class="edge-banner-card">
-            <img src="assets/img-1.avif" alt="Special Offer Banner" class="img-fluid edge-banner-img">
-        </div>
-    </div>
-</section>
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
