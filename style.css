@@ -329,40 +329,7 @@ header{
     background: #ea5f92;
 }
 
-/*============================
-        Responsive
-=============================*/
 
-@media(max-width:1100px){
-
-    .chair-card{
-        position: static;
-        width: 100%;
-        margin-top: 60px;
-    }
-
-    .neha-feature-wrapper{
-        width: 100%;
-    }
-
-}
-
-@media(max-width:768px){
-
-    .neha-heading{
-        font-size: 30px;
-    }
-
-    .neha-feature-wrapper{
-        grid-template-columns:1fr;
-    }
-
-    .cloud,
-    .rainbow{
-        display:none;
-    }
-
-}
 
 /*====================================
       NEW ARRIVALS SECTION
@@ -480,36 +447,6 @@ header{
 
 }
 
-/*=====================
-Responsive
-======================*/
-
-@media(max-width:992px){
-
-.neha-products-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-@media(max-width:768px){
-
-.neha-arrivals-top{
-
-flex-direction:column;
-gap:20px;
-
-}
-
-.neha-products-grid{
-
-grid-template-columns:1fr;
-
-}
-
-}
 
 /*==========================
 CONTACT SECTION
@@ -592,31 +529,6 @@ CONTACT SECTION
 .contact-btn:hover{
 
     background:#ff6e95;
-
-}
-
-/*=========== Responsive ===========*/
-
-@media(max-width:992px){
-
-.contact-section{
-
-flex-direction:column;
-
-}
-
-.contact-content{
-
-text-align:center;
-
-}
-
-.moon-stars{
-
-position:static;
-margin-bottom:20px;
-
-}
 
 }
 
@@ -781,11 +693,73 @@ margin-bottom:20px;
 
 }
 
+/* =========================
+   SMALL SCREEN - OVERLAP FIX
+========================= */
+
+@media (max-width: 768px){
+
+    .promo-section{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: 60px auto 80px;
+    }
+
+    .promo-left,
+    .promo-right{
+        width: 100%;
+    }
+    
+    .chair-img{
+        position: static;
+        width: 100%;
+        max-width: 550px;
+        display: block;
+        margin: 20px auto 0;
+    }
+
+  
+    .baby2-img{
+        width: 100%;
+        max-width: 520px;
+        margin: auto;
+    }
+
+    .baby1-img{
+        position: static;
+        width: 100%;
+        max-width: 550px;
+        display: block;
+        margin: 20px auto 0;
+    }
+
+}
 
 /*=====================
 Responsive
 ======================*/
+@media(max-width:992px){
 
+.contact-section{
+
+flex-direction:column;
+
+}
+
+.contact-content{
+
+text-align:center;
+
+}
+
+.moon-stars{
+
+position:static;
+margin-bottom:20px;
+
+    }
+}
 @media(max-width:992px){
 
 .footer-container{
@@ -827,5 +801,36 @@ gap:15px;
 border-radius:30px;
 
 }
+
+}
+
+@media(max-width:1100px){
+
+    .chair-card{
+        position: static;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .neha-feature-wrapper{
+        width: 100%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .neha-heading{
+        font-size: 30px;
+    }
+
+    .neha-feature-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .cloud,
+    .rainbow{
+        display:none;
+    }
 
 }
